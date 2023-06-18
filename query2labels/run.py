@@ -1,0 +1,1 @@
+python -m torch.distributed.launch --nproc_per_node=3  main_mlc.py --batch-size 12 --print-freq 50 --output "/home2/wangyj/query2labels/output"  --dist-url tcp://127.0.0.1:3717 --epochs 80 --lr 5e-5  --early-stop --amp --world-size 1 --rank 0
